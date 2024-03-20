@@ -1,3 +1,7 @@
+:root {
+    --rotation: 0deg;
+}
+
 body {
     max-width: 980px;
     margin: auto;
@@ -24,4 +28,64 @@ h3,
 h4,
 h5,
 h6 {
+}
+
+#welcome {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.brendanlist {
+    background-color: gold;
+    border-radius: 8px;
+    padding: 8px;
+    margin: 16px 16px;
+    width: fit-content;
+    /* rotate: var(--rotation); */
+    clear: both;
+}
+
+.brendanlist p {
+    text-align: center;
+    font-weight: bold;
+}
+
+.brendanlist ul {
+    padding: 0 16px 0 24px;
+}
+
+#existingsites {
+    /* rotate: var(--rotation); */
+    /* margin-left: 0%; */
+}
+
+#wannamake {
+    margin-left: 35%;
+}
+
+#enjoying {
+    margin-left: 20%;
+}
+
+#onedayprojects {
+    margin-left: 5%;
+}
+
+#futurewriting {
+    /* margin-left: 60%; */
+    float: right;
+    margin-right: 20%;
+}
+
+#funtohost {
+    margin-left: 20%;
+    /* position: relative; */
+}
+
+#findmehere {
+    /* margin-left: 80%; */
+    margin-right: 15%;
+    /* position: relative; */
+    float: right;
+    /* right: 0px; */
 }
