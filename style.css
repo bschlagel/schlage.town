@@ -30,6 +30,16 @@ h5,
 h6 {
 }
 
+a {
+    color: blue;
+}
+a:visited {
+    color: crimson;
+}
+a:hover {
+    color: gold;
+}
+
 #welcome {
     text-align: center;
     margin-bottom: 32px;
@@ -43,11 +53,15 @@ h6 {
     width: fit-content;
     /* rotate: var(--rotation); */
     clear: both;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
-.brendanlist p {
+.brendanlist h2 {
     text-align: center;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 .brendanlist ul {
@@ -88,4 +102,51 @@ h6 {
     /* position: relative; */
     float: right;
     /* right: 0px; */
+}
+
+/* expando-collapso experiments! */
+/* see: https://www.w3schools.com/howto/howto_js_collapsible.asp */
+/* --> */
+/* button used to open and close the collapsible content */
+.collapsible {
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    /* font-size: 15px; */
+    border-radius: 8px;
+}
+/* button bg color if clicked (active) or hovered */
+.active,
+.collapsible:hover {
+    background-color: #ccc;
+}
+/* collapsible content - animated! */
+.content {
+    padding: 0 16px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.1s ease-out;
+    border-radius: 8px;
+    /* margin: 8px; */
+}
+.content p {
+    margin: 16px 0;
+}
+.collapsible:after {
+    content: "\02795";
+    /* Unicode character for "plus" sign (+) */
+    /* font-size: 13px; */
+    color: white;
+    float: right;
+    margin-left: 5px;
+}
+.active:after {
+    content: "\2796";
+    /* Unicode character for "minus" sign (-) */
 }
