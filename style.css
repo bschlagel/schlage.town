@@ -19,7 +19,9 @@ body {
         sans-serif;
 }
 
-p {
+p,
+button {
+    font-size: 16px;
 }
 
 h1,
@@ -43,17 +45,38 @@ a:hover {
 #welcome {
     text-align: center;
     margin-bottom: 32px;
+    border-radius: 8px;
+    padding: 8px;
+    margin: 16px auto;
+    width: fit-content;
+    background-color: crimson;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+#welcome h2 {
+    background-color: white;
+    border-radius: 8px;
+    padding: 8px;
+    width: fit-content;
+    margin: 8px auto;
+}
+#welcome p {
+    background-color: white;
+    border-radius: 8px;
+    padding: 8px;
+    width: fit-content;
+    margin: 8px auto;
 }
 
 .brendanlist {
-    background-color: gold;
+    /* background-color: gold; */
     border-radius: 8px;
     padding: 8px;
     margin: 16px 16px;
     width: fit-content;
     /* rotate: var(--rotation); */
     clear: both;
-
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -62,6 +85,11 @@ a:hover {
 .brendanlist h2 {
     text-align: center;
     /* font-weight: bold; */
+    background-color: white;
+    padding: 8px;
+    width: fit-content;
+    margin: 8px auto;
+    border-radius: 8px;
 }
 
 .brendanlist ul {
@@ -71,29 +99,35 @@ a:hover {
 #existingsites {
     /* rotate: var(--rotation); */
     /* margin-left: 0%; */
+    background-color: gold;
 }
 
 #wannamake {
     margin-left: 35%;
+    background-color: crimson;
 }
 
 #enjoying {
     margin-left: 20%;
+    background-color: blue;
 }
 
 #onedayprojects {
     margin-left: 5%;
+    background-color: gold;
 }
 
 #futurewriting {
     /* margin-left: 60%; */
     float: right;
     margin-right: 20%;
+    background-color: crimson;
 }
 
 #funtohost {
     margin-left: 20%;
     /* position: relative; */
+    background-color: blue;
 }
 
 #findmehere {
@@ -102,6 +136,7 @@ a:hover {
     /* position: relative; */
     float: right;
     /* right: 0px; */
+    background-color: gold;
 }
 
 /* expando-collapso experiments! */
